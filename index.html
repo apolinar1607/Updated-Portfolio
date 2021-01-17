@@ -4,81 +4,56 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Bootstrap Version 5 CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!--Custom CSS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">    
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <title>Portfolio Using Bootstrap!</title>
-    <style>
-        .aboutImage {
-            float: left;
-            margin: 10px;
-        }
-        @media screen and (max-width: 641px){
-            .aboutImage {
-                width: 100%;
-            }
-        }
-        /*Small devices*/
-        @media (min-width: 576px) and (max-width: 767.98px) { 
-            .aboutImage {
-                width: 100%;
-            }
-        }
-        /*Medium devices (tablets, 768px and up)*/
-        @media (min-width: 768px) and (max-width: 979.98px) {
-           .aboutImage {
-               width: 50%;
-           } 
-        }
-        /*Large devices (desktops, 992px and up)*/
-        @media (min-width: 980px) and (max-width: 1199.98px) {
-            .aboutImage {
-                width: 30%;
-            }
-        }
-        /*Extra large devices (large desktops, 1200px and up)*/
-         @media (min-width: 1200px) {
-            .aboutImage {
-                width: 20%;
-            }
-         }
+    <title>Professional Portfolio</title>
+       
          
-    </style>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-12 col-md-4">
-                <nav class="navbar justify-content-center myNameBox">
-                    <span class="navbar-brand mb-1 h1 myNameFont">Apolinar Magtanong</span>
-                  </nav>
-            </div>
-             <div class="col-sm-12 col-md-8 myMainMenuBox">
-                <ul class="nav justify-content-md-end  justify-content-sm-center">
-                    <li class="nav-item ">
-                      <a class="nav-link active myMainMenuFont" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link myMainMenuFont" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link myMainMenuFont" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+            <nav class="navbar justify-content-center myNameBox">
+                <p class="navbar-brand mb-1 h1 myNameFont">Apolinar Magtanong</p>
+                <p id="myTitle">Electrical Engineer / Full Stack Web Developer</p>
+            </nav>
+             <div class="myMainMenuBox">
+                 <div class="tableList">
+                
+                     <ul class="nav" id="myMenuList">
+                        <li class="nav-item ">
+                            <a class="nav-link myMainMenuFont active" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link myMainMenuFont" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link myMainMenuFont" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <br>
+
         <div class="row">
             <div class="col-lg-8">
-                <div class="jumbotron">
-                    <h1 class="display-5 aboutMeFont">About me</h1>
-                    <hr class="my-4">
+                    <h1 class="aboutMeFont">About me</h1>
+                    <hr>
                     <div class="row">
-                        <div class="col">
-                            <img src="http://placehold.it/200x200" alt="Placeholder" class="aboutImage">
-                                <p>My name is Apolinar. I am an Electrical Engineer wishing to learn Web
+                        <div class="col about-me-content-div">
+                            <img src="img/photo-me3.JPG" alt="Placeholder" class="img-thumbnail aboutImage">
+                                <p id="about-me-content">My name is Apolinar. I am an Electrical Engineer wishing to learn Web
                                 Development. Software has been becoming a staple in my line so adding
                                 software development skills in my buckett list will be a big help for my
                                 career advancement. My other interest are PLC programming, HMI programming,
@@ -87,10 +62,8 @@
                                 instrumentation devices. I am also well verse in the safety practices in 
                                 industrial environments.
                                 </p>
-                             
                         </div>
                     </div>
-                </div>
             </div>
         </div>
 
@@ -98,7 +71,7 @@
 
         <!-- start of sticky footer-->
     <div>
-        <div class="container fixed-bottom stickyFooter">
+        <div class="container-fluid fixed-bottom stickyFooter">
                   <span class="spanTxt">.&copy; MyProfile.com</span>
         </div>
     </div>
