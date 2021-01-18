@@ -1,68 +1,86 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <!--Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap Version 5 CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!--Custom CSS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">    
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
-    <title>Portfolio Using Bootstrap!</title>
+  <title>Professional Portfolio</title>
   </head>
   <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <nav class="navbar justify-content-center myNameBox">
-                    <span class="navbar-brand mb-1 h1 myNameFont">Apolinar Magtanong</span>
-                  </nav>
-            </div>
-             <div class="col-lg-8 myMainMenuBox">
-                <ul class="nav nav-fill">
-                    <li class="nav-item ">
-                      <a class="nav-link myMainMenuFont" href="index.html">About</a>
+    <div class="container-fluid">
+      <div class="row">
+          <nav class="navbar justify-content-center myNameBox">
+              <p class="navbar-brand mb-1 h1 myNameFont">Apolinar Magtanong</p>
+              <p id="myTitle">Full-Stack Web Developer / Electrical Engineer</p>
+          </nav>
+           <div class="myMainMenuBox">
+               <div class="tableList">
+                   <ul class="nav" id="myMenuList">
+                      <li class="nav-item ">
+                          <a class="nav-link myMainMenuFont active" href="index.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link myMainMenuFont" href="portfolio.html">Portfolio</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link myMainMenuFont" href="contact.html">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link myMainMenuFont" href="https://linkedin.com/in/apolinar-iii-magtanong-31a234123"><i class="fab fa-linkedin" id="linked-icon"></i></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link myMainMenuFont" href="portfolio.html">Portfolio</a>
+                        <a class="nav-link myMainMenuFont" href="https://github.com/apolinar1607"><i class="fab fa-github" id="github-icon"></i></a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link active myMainMenuFont" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <br>
+                    </ul>
+               </div>
+          </div>
+      </div>
+      <br>
+    
         <div class="row">
             <div class="col-lg-8">
-                <div class="jumbotron">
-                    <form>
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">Name</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <!-- <form> -->
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="text-light">Name</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
-                        <div class="form-group">
-                          <label for="exampleInputPassword1">Email</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
-                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="text-light">Email</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1">
+                          <small id="emailHelp" class="form-text text-light">We'll never share your email with anyone else.</small>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Message</label>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="text-light">Message</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
-                      </form>
-                       
-                </div>
+                    <!-- </form> -->
             </div>
         </div>
          <!-- start of sticky footer-->
-         <div class="row">
-            <div class="col stickyFooter">
-                  <span class="spanTxt">.&copy; MyProfile.com</span>
-            </div>
-        </div>
+         <div>
+          <div class="container-fluid fixed-bottom stickyFooter">
+                    <span class="spanTxt">.&copy; MyProfile.com</span>
+          </div>
+      </div>
         <!--end of sticky footer-->
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
