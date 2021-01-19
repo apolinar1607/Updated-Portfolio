@@ -17,7 +17,6 @@
 }
 
 .myNameFont {
-    /* font-family:'Times New Roman', Times, serif; */
     font-family: 'Permanent Marker', cursive;
     font-size: 40px;
     color: white;
@@ -25,8 +24,6 @@
 }
 .myMainMenuBox {
     padding: 5px;
-    /* text-align: center; */
-    /* border: violet 5px solid; */
     display: flex;  
     background: url("../img/bar-bg.jpg") repeat-x;
     height: 84px;
@@ -38,7 +35,6 @@
 #myMenuList{
     min-width: 200px;
     list-style: none;
-    /* text-align: right; */
     padding-top: 10px;
 }
 #myMenuList li{
@@ -52,14 +48,6 @@
     padding: 5px;
     margin: 5px 20px 5px 20px;
 }
-/* .aboutMeFont {
-    font-family: 'Righteous', cursive;
-    font-weight: bold;
-    font-size: 30px;
-    color: white;
-    padding-top: 5px;
-    text-decoration: underline blue;
-} */
 .jumbotron {
     padding-top: 10px;
     padding-bottom: 5px;

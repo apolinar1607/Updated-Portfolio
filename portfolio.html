@@ -79,14 +79,7 @@
                          </div>
                     </div>
             </div>
-    <!--start of sticky footer-->
-    <!-- <div>
-        <div class="container-fluid fixed-bottom stickyFooter">
-                  <span class="spanTxt">.&copy; MyProfile.com</span>
-        </div>
-    </div> -->
-        <!--end of sticky footer-->
-        <!--end of sticky footer-->
+   
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -101,51 +94,7 @@
     -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <script type="text/javascript">
-
-    //dynamic text for work1
-        $("#img-pwd").mouseenter(function (){
-        let newP1 = $("<p>").addClass("work-text")
-        let xStr = `An application that generates a random password based on user selected criteria.
-                    This app will run in the browser and feature dynamically update HTML and CSS powered
-                    by Javascript Code.`
-        newP1.text(xStr);
-        $("#work1").append(newP1);
-        })
-
-        $("#img-pwd").mouseleave(function (){
-            $(".work-text").remove();
-        })
-
-    //dynamic text for work2
-        $("#img-weather").mouseenter(function (){
-        let newP1 = $("<p>").addClass("work-text")
-        let xStr = `This application is a weather dashboard that will run in the 
-                    browser and feature dynamically updated HTML and CSS. Weather information are retrieved
-                    using data from another application's API and using it in the context of this weather
-                    dashboard.`
-        newP1.text(xStr);
-        $("#work2").append(newP1);
-        })
-
-        $("#img-weather").mouseleave(function (){
-            $(".work-text").remove();
-        })
-    //dynamic text for project1
-        $("#img-project1").mouseenter(function (){
-        let newP1 = $("<p>").addClass("work-text")
-        let xStr = `In this group project, we built a web application from scratch by integrating data
-                    received from multiple server-side API requests. Working as a team, we have learned
-                    agile development methodologies and implement feature and bug fixes using git branch
-                    workflow and pull requests.`
-        newP1.text(xStr);
-        $("#project1").append(newP1);
-        })
-
-        $("#img-project1").mouseleave(function (){
-            $(".work-text").remove();
-        })
-    </script>
+    
 
   </body>
 </html>

@@ -11,11 +11,6 @@ Background image and google fonts were also added to improve the typography of t
 
 In the Portfolio page, two of the homework assignments and project 1 were highlighted. 
 
-If you hover your mouse to the image corresponding to the homework or project, a description text will be displayed as shown in the image below:
-
-
-![Description](./img/description-text.PNG)
-
 
 To open the URL for the project or homework, click the green icon below each project/homework image:
 
